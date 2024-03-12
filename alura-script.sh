@@ -5,11 +5,8 @@
 from="jpg"
 to="png"
 
-convert ~/repositorios/own/scripts/shell-script-alura/imagens-livros/$1.$from  ~/repositorios/own/scripts/shell-script-alura/imagens-livros/$1.$to
+IMAGE_PATH=~/repositorios/own/scripts/shell-script-alura/imagens-livros
 
-name="test"
+convert $IMAGE_PATH/$1.$from  $IMAGE_PATH/$1.$to
 
-echo "O arquivo $1 foi convertido com sucesso!"
-
-echo $name
 
