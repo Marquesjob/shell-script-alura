@@ -6,7 +6,15 @@ from="jpg"
 to="png"
 
 IMAGE_PATH=~/repositorios/own/scripts/shell-script-alura/imagens-livros
+TARGET_DIRECTORY=~/repositorios/own/scripts/shell-script-alura/converted-imgs
 
-convert $IMAGE_PATH/$1.$from  $IMAGE_PATH/$1.$to
+for img in $@ 
+do 
+  
+  convert $IMAGE_PATH/$img.$from  $IMAGE_PATH/$img.$to
+  
+  mv $IMAGE_PATH/$img.$to $TARGET_DIRECTORY
+
+done;
 
 
