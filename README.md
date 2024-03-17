@@ -1,6 +1,6 @@
 # shell-script-alura
 
-Script work on Linux.
+Script working on Linux.
 
 Dependencies: 
 
