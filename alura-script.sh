@@ -12,7 +12,7 @@ TARGET_DIRECTORY=~/repositorios/own/scripts/shell-script-alura/converted-imgs
 for img in *.$from
 do 
   
-  # variable=$() -> Atribui a uma variável o retorno da execução de um comando.
+  # variable=$(comando) -> Atribui a uma variável o retorno da execução de um comando.
   no_extension_img=$(ls $img | awk -F. '{ print $1 }');
 
   convert $no_extension_img.$from $TARGET_DIRECTORY/$no_extension_img.$to
